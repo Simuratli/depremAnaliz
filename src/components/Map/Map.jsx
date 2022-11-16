@@ -41,6 +41,7 @@ function App() {
     useEffect(() => {
         axios.get('https://simuratli.github.io/DepremAPI/db.json').then((response) => {
             setDeprem(response.data.deprem);
+            console.log('dere', response.data.deprem)
             setLoading(false);
         });
     }, []);
@@ -64,7 +65,7 @@ function App() {
                         return (
                             <CircleMarker
                                 key={id}
-                                center={[convertFloat(d.Enlem), convertFloat(d.Boylam)]}
+                                center={[d.Enlem, d.Boylam]}
                                 pathOptions={{ color: choseColor(d.Zaman) }}
                                 radius={10}
                             >

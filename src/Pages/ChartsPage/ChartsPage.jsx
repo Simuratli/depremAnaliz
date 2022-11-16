@@ -1,5 +1,5 @@
 import React from 'react'
-import { StockBuyukluk, StockDerinlik } from '../../components'
+import { StockBuyukluk, StockDerinlik, YikicilikGraph } from '../../components'
 import './ChartsPage.css'
 
 function ChartsPage() {
@@ -8,6 +8,8 @@ function ChartsPage() {
             <StockBuyukluk />
             <br /><br /><br />
             <StockDerinlik />
+            <br /><br /><br />
+            <YikicilikGraph />
         </div>
     )
 }

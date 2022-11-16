@@ -57,7 +57,7 @@ class StockChartWithRangeSelector extends Component {
           },
           axisY: {
             title: 'Deprem derinliği',
-            prefix: 'f',
+            prefix: '',
             crosshair: {
               enabled: true,
               snapToDataPoint: true,
