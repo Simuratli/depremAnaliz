@@ -1,0 +1,49 @@
+.navbar{
+    position: absolute;
+    background-color: rgb(41, 41, 41);
+    color: white;
+    padding: 10px 20px;
+    min-width: 200px;
+    border-radius: 40px;
+    text-align: center;
+    max-height: 30px;
+    overflow:hidden;
+    text-align: center;
+    transition: 0.3s;
+    z-index: 100000;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.navbar:hover{
+    max-height: 700px;
+    overflow:initial;
+    border-radius: 20px;
+    transition: 0.3s ;
+}
+
+.navbar__container{
+    position: relative;
+}
+
+.navbar__current{
+   font-size: 20px;
+}
+
+.navbar__items{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    overflow: hidden;
+}
+
+.navbar__items a{
+   font-size: 16px;
+   color: white;
+   text-decoration: none;
+   padding: 10px ;
+}
+
+.navbar__items a:hover{
+    color: rgb(211, 211, 211);
+ }
